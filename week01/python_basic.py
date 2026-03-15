@@ -465,3 +465,4 @@ data
 with open('example.txt', 'w') as f:
   f.write("Now is better than never.")
 # data = f.read()       # 오류 발생
+
