@@ -109,4 +109,5 @@ print(df.head())
 df['avarage'] = df[['math', 'science', 'english']].mean(axis=1)
 print(df)
 
-
+average_df = df[['name', 'average']]
+print(average_df)
