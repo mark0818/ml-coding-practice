@@ -166,7 +166,7 @@ print(np_a - 5)
 print(np_a * 2)
 print(np_a+10 / 3)
 
-np_b = np.array([1,0], [0,1])
+np_b = np.array([[1,0], [0,1]])
 print(np_b)
 print(np_a + np_b)
 print(np_a - np_b)
