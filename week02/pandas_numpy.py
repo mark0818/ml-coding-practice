@@ -82,6 +82,6 @@ print(sample_df.set_index('var_1'))
 
 print(sample_df.describe())
 print(sample_df.std())
-print(sample_df.agg(['count', 'mean', 'std', 'mean', 'max']))
+print(sample_df.agg(['count', 'mean', 'std', 'min', 'max']))
 
 
