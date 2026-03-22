@@ -9,4 +9,4 @@ print(sample.tail())
 sample.info()
 sample.describe()
 
-sample_dic = {'name': ['john', 'Ann', 'Kevin', 'age': [23,22,21]]}
+sample_dic = {'name': ['john', 'Ann', 'Kevin'], 'age': [23,22,21]]}
