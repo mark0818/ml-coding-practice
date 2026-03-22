@@ -116,6 +116,9 @@ data = {
     'english': [90, 87, 85, 88, 92]
 }
 
+df = pd.DataFrame(data)
+print(df.head())
+
 df['avarage'] = df[['math', 'science', 'english']].mean(axis=1)
 print(df)
 
