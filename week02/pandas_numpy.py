@@ -106,6 +106,9 @@ data = {
 df = pd.DataFrame(data)
 print(df.head())
 
+result = df[df['age'] >= 30][['name', 'salary']]
+print(result)
+
 df['avarage'] = df[['math', 'science', 'english']].mean(axis=1)
 print(df)
 
