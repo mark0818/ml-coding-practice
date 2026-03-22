@@ -119,7 +119,7 @@ data = {
 df = pd.DataFrame(data)
 print(df.head())
 
-df['avarage'] = df[['math', 'science', 'english']].mean(axis=1)
+df['average'] = df[['math', 'science', 'english']].mean(axis=1)
 print(df)
 
 average_df = df[['name', 'average']]
