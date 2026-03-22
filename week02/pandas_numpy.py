@@ -75,3 +75,4 @@ condition = (
 )
 
 winner_df = df[condition]
+print
