@@ -70,5 +70,8 @@ print(df.head())
 condition = (
     (df['comment_length'] >= 100) &
     (df['likes'] >= 20) &
-    (~df['is_spam'])
+    (~df['is_spam']) &
+    (df['has_image'])
 )
+
+winner_df = df[condition]
