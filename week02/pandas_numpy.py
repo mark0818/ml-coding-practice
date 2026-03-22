@@ -199,4 +199,5 @@ print(a.min())
 print(a.max())
 
 print(a.max(axis=1))
-print(a.comsum())
+print(a.cumsum())
+print(a.argmax())
