@@ -28,4 +28,6 @@ print(sample_df['var_5'])
 print(sample_df[['var_1', 'var_4']])
 
 print(sample_df.loc['a'])
-print(sample)
+print(sample_df.loc[['a','c','e']])
+print(sample_df.loc['a':'c'])
+
