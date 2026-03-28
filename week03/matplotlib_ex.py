@@ -13,3 +13,10 @@ import matplotlib.pyplot as plt
 
 plt.plot(pclass_survived_mean['Pclass'], pclass_survived_mean['Survived'],
          marker='o', linestyle='-', color='violet')
+plt.title('Survival Rate Variation Across Passenger Classes')
+plt.xlabel('Pclass')
+plt.ylabel('Survived Rate')
+plt.xticks([1,2,3])
+plt.gird(True)
+plt.savefig('Fugure01.png')
+plt.close()
