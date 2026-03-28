@@ -7,3 +7,5 @@ print(titanic.head())
 print(titanic.info())
 
 pclass_survived_mean = titanic.groupby('Pclass')['Survived'].mean().reset_index()
+pclass_survived_mean
+
