@@ -40,3 +40,5 @@ plt.savefig('Figure02.png')
 plt.close()
 
 survived_counts = titanic[titanic['Survived'] == 1]['Sex'].value_counts()
+print(survived_counts)
+
