@@ -270,3 +270,4 @@ fig.tight_layout()
 plt.savefig('Figure15.png')
 plt.close()
 
+parch_counts = titanic.groupby
