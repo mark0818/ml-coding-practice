@@ -123,6 +123,9 @@ print(survived_counts)
 plt.figure(figsize=(10, 6))
 
 plt.fill_between(survived_counts.index.astype(str), survived_counts[0],
-                 color='hotpink', )
+                 color='purple', alpha=0.9, label='Survived')
+
+plt.fill_between(survived_counts.index.astype(str), survived_counts[
+
 
 
