@@ -151,7 +151,12 @@ plt.ylabel('Age')
 plt.savefig('Figure09.png')
 plt.close()
 
-titanic['Age'] = titanic['Age'].fillna
+titanic['Age'] = titanic['Age'].fillna(titanic['Age'].mean())
+print(titanic.info())
+
+plt.figure(figszie=(10, 6))
+
+
 
 
 
