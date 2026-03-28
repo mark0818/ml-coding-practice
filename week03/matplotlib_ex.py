@@ -21,4 +21,6 @@ plt.grid(True)
 plt.savefig('Fugure01.png')
 plt.close()
 
-survived_counts = 
+survived_counts = titanic[titanic['Survived'] == 1]['Embarked'].value_counts()
+print(survived_counts)
+
