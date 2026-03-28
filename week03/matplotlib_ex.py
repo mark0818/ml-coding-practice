@@ -243,3 +243,4 @@ axes[1, 0].plot([7, 8, 9])
 axes[1, 1].plot([10, 11, 12])
 plt.savefig('Figure14.png')
 plt.close()
+
