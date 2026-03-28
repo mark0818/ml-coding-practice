@@ -205,3 +205,6 @@ plt.plot([10, 11, 12])
 plt.savefig('Figure12.png')
 plt.close
 
+titanic = pd.read_csv('3.1.1.titanic.csv')
+
+titanic = pd.read
