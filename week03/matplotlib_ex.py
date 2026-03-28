@@ -56,6 +56,14 @@ for i, value in enumerate(survived_counts):
 plt.savefig('Figure03.png')
 plt.close()
 
+print(titanic.info(), '\n')
+
+titanic = titanic.dropna(subset=['Age', 'Fare', 'Survived'])
+print(titanic.info())
+
+plt.figure(figsize=(12, 8))
+scatter = plt.scatter(x='Age', y='Fare', data=titanic, c=titanic['Survived'],cmap='
+
 survived_counts = titanic['Survived'].value_counts()
 print(survived_counts)
 
