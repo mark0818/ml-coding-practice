@@ -48,5 +48,5 @@ plt.xlabel('Count')
 plt.ylabel('Gender')
 plt.legend(bars, ['Survived - Female', 'Survived - Male'], loc='upper right')
 
-)
+plt.axvline(x=survived_counts['male'], color='gray',linestyle='--', linewidth=1))
 
