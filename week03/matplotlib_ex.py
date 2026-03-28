@@ -154,7 +154,7 @@ plt.close()
 titanic['Age'] = titanic['Age'].fillna(titanic['Age'].mean())
 print(titanic.info())
 
-plt.figure(figszie=(10, 6))
+plt.figure(figsize=(10, 6))
 
 violin_plot = plt.violinplot([titanic[titanic['Pclass'] == 1]['Age'],
                               titanic[titanic['Pclass'] == 2]['Age'],
