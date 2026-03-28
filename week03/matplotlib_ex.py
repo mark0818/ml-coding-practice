@@ -89,5 +89,5 @@ titanic = titanic.dropna(subset=['Age'])
 print(titanic.info())
 
 plt.figure(figsize=(10, 6))
-plt.hists
+plt.hist(titanic['Age'], bins=20, color)
 
