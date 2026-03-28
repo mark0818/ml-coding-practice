@@ -6,4 +6,4 @@ print(titanic.head())
 
 print(titanic.info())
 
-pclass_s
+pclass_survived_mean = titanic.groupby('Pclass')[survived]
