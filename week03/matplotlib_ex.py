@@ -226,4 +226,12 @@ plt.legend(loc='upper right')
 plt.subplot(2, 1, 2)
 plt.bar(x, y2, color='deeppink', alpha=0.7, width=0.5, label='Survived')
 plt.xlabel('Parch')
-plt.y
+plt.ylabel('Survived Count', color='deeppink')
+plt.tick_params(axis='y', labelcolor='deeppink')
+plt.legend(loc='upper right')
+
+plt.suptitle('Survival Analysis by Number of Parents/Children (Parch) on the Titanic')
+plt.tight_layout()
+plt.savefig('Figure13.png')
+plt.close()
+
