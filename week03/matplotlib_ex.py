@@ -38,3 +38,4 @@ for i, value in enumerate(survived_counts):
 
 plt.savefig('Figure02.png')
 plt.close()
+
