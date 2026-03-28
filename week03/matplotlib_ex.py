@@ -89,5 +89,15 @@ titanic = titanic.dropna(subset=['Age'])
 print(titanic.info())
 
 plt.figure(figsize=(10, 6))
-plt.hist(titanic['Age'], bins=20, color)
+plt.hist(titanic['Age'], bins=20, color='seagreen', edgecolor='black')
+
+plt.xlabel('Age')
+plt.ylabel('Count')
+plt.title('Distribution of Ages on the Titanic')
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.savefig('Figure06.png')
+plt.close()
+
+
+
 
