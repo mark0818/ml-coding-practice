@@ -20,3 +20,5 @@ plt.xticks([1,2,3])
 plt.grid(True)
 plt.savefig('Fugure01.png')
 plt.close()
+
+survived_counts = 
