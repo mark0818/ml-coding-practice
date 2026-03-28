@@ -115,5 +115,7 @@ plt.close()
 
 titanic = titanic.dropna(subset=['Age', 'Fare'])
 
+age_groups = pd.cut(titanic['Age'], bins=range(0, 81, 5))
 
+survived_counts = titanic.groupby([age_groups, 'Survived'], observed)
 
