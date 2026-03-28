@@ -56,5 +56,9 @@ for i, value in enumerate(survived_counts):
 plt.savefig('Figure03.png')
 plt.close()
 
+survived_counts = titanic['Survived'].value_counts()
+print(survived_counts)
 
+plt.figure(figsize=(8 ,8))
+plt.pie(survived_counts, labels=)
 
