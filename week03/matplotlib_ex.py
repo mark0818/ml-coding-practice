@@ -223,5 +223,7 @@ plt.ylabel('Not Survived Count', color='indigo')
 plt.tick_params(axis='y', labelcolor='indigo')
 plt.legend(loc='upper right')
 
-plt subplot(2, 1, 2)
+plt.subplot(2, 1, 2)
 plt.bar(x, y2, color='deeppink', alpha=0.7, width=0.5, label='Survived')
+plt.xlabel('Parch')
+plt.y
