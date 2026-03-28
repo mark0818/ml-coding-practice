@@ -270,4 +270,18 @@ fig.tight_layout()
 plt.savefig('Figure15.png')
 plt.close()
 
-parch_counts = titanic.groupby
+parch_counts = titanic.groupby('Parch')['Survived'].value_counts().unstack().fillna(0)
+print(parch_counts)
+
+x = parch_counts.index.astype(str) 
+y1 = parch_counts[0].values
+y2 = parch_counts[1].values
+
+fig, ax1 = plt.subplots()
+
+ax1.plot(x, y1, '-s', color='indigo', markersize=7, linewidth=5, alpha=0.7, label='Not Survived')
+ax1.set_xlabel('Parch')
+ax1.set_ylabel('Not Survived Count', color='indigo')
+ax1.tick_params(axis='y', labelcolor='indigo')
+ax1.legend(loc='upper right', bbox_to_anchor=(1, 1)
+           
