@@ -117,5 +117,12 @@ titanic = titanic.dropna(subset=['Age', 'Fare'])
 
 age_groups = pd.cut(titanic['Age'], bins=range(0, 81, 5))
 
-survived_counts = titanic.groupby([age_groups, 'Survived'], observed)
+survived_counts = titanic.groupby([age_groups, 'Survived'], observed=False).size().unstack().file.na(0)
+print(survived_counts)
+
+plt.figure(figsize=(10, 6))
+
+plt.fill_between(survived_counts.index.astype(str), survived_counts[0],
+                 )
+
 
