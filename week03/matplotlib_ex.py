@@ -254,3 +254,15 @@ y2 = parch_counts[1].values
 fig, axes = plt.subplots(2, 1, figsize=(10,10))
 
 axes[0].plot(x, y1, '-o', color='indigo', markersize=7, linewidth=3, alpha=0.7, label='Not Survived')
+axes[0].set_xlabel('Parch')
+axes[0].set_ylabel('Not Survived Count', color='indigo')
+axes[0].tick_params(axis='y', labelcolor='indigo')
+axes[0].legend(loc='upper right')
+
+axes[1].bar(x, y2, color='deeppink', alpha=0.7, width=0.5, label='Survived')
+axes[1].set_xlabel('Parch')
+axes[1].set_ylabel('Survived Count', color='deeppink')
+axes[1].tick_params(axis='y', labelcolor='deeppink')
+axes[1].legend(loc='upper right')
+
+fig.suptitle()
