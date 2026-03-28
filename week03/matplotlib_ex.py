@@ -6,3 +6,4 @@ print(titanic.head())
 
 print(titanic.info())
 
+pclass_s
