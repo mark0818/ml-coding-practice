@@ -151,7 +151,7 @@ plt.ylabel('Age')
 plt.savefig('Figure09.png')
 plt.close()
 
-
+titanic['Age'] = titanic['Age'].fillna
 
 
 
