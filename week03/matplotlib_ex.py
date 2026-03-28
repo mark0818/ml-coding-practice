@@ -294,6 +294,15 @@ ax2.legend(loc='upper right', bbox_to_anchor=(1, 0.9))
 
 plt.suptitle('Survived Analysis by Number of Parents/Children (Parch) on the Titanic')
 plt.tight_layout()
-plt.savefig('Figure16.png)
+plt.savefig('Figure16.png')
+plt.close()
+
+plt.hist(titanic['Age'], bins=20, color='skyblue', edgecolor='black')
+plt.xlabel('Age')
+plt.ylabel('Count')
+plt.title('Distribution of Ages on the Titanic')
+plt.grid(axis='y', linstyle='--', alpha=0.7)
+
+plt.savefig('Figure17.png')
                
            
