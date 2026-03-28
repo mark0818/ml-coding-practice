@@ -83,3 +83,11 @@ plt.title('Survival Distribution on the Titanic')
 plt.savefig('Figure05.png')
 plt.close()
 
+print(titanic.info(), '\n')
+
+titanic = titanic.dropna(subset=['Age'])
+print(titanic.info())
+
+plt.figure(figsize=(10, 6))
+plt.hists
+
