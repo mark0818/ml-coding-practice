@@ -165,6 +165,7 @@ plt.title('Violin Plot of Age by Pclass')
 plt.xlabel('Pclass')
 plt.ylabel('Age')
 
+plt.xticks([1, 2, 3], ['1st Class', '2nd Class', '3rd Class']) 
 
 
 
