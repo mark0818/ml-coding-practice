@@ -283,5 +283,9 @@ ax1.plot(x, y1, '-s', color='indigo', markersize=7, linewidth=5, alpha=0.7, labe
 ax1.set_xlabel('Parch')
 ax1.set_ylabel('Not Survived Count', color='indigo')
 ax1.tick_params(axis='y', labelcolor='indigo')
-ax1.legend(loc='upper right', bbox_to_anchor=(1, 1)
+ax1.legend(loc='upper right', bbox_to_anchor=(1, 1))
+
+ax2 = ax1.twinx()
+
+ax2.bar(x, y2, color='deeppink', alpha=0.7)
            
