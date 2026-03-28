@@ -172,4 +172,14 @@ plt.legend(violin_plot['bodies'], ['1st Class', '2nd Class', '3rd Class'],
 plt.savefig('Figure10.png')
 plt.close()
 
+fare_means = titanic.groupby('Parch')['Fare'].mean()
+print(fare_means, '\n')
+
+fare_std = titanic.groupby('Parch')['Fare'].std()
+print(fare_std)
+
+plt.figure(figsize=(10,6))
+
+plt.errorbar(fare_means.index, fare_means, yerr=fare_std, fmt='o',
+             capsize=5, capthick=1, label='Fare')
 
