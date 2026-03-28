@@ -113,5 +113,7 @@ plt.title('Correlation Heatmap of Titanic')
 plt.savefig('Figure07.png')
 plt.close()
 
+titanic = titanic.dropna(subset=['Age', 'Fare'])
+
 
 
