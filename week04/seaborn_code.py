@@ -29,3 +29,11 @@ ax1.set_title('Strip Plot of Tip by Day and Gender')
 ax2.set_title('Swarm Plot of Tip by Day and Gender')
 plt.savefig('Seaborn_Figure01.jpg')
 
+# **빈도 그래프**
+# figure에 2개의 서브 플롯을 생성
+fig = plt.figure(figsize=(15, 5))
+ax1 = fig.add_subplot(1, 2, 1)
+ax2 = fig.add_subplot(1, 2, 2)
+
+# 식사가 이루어진 시간대
+# x축 변수, 데이터셋, axe 객체(1번째 그래프)
