@@ -60,3 +60,5 @@ sns.regplot(x='total_bill', y='tip', data=tips, color='blue', scatter_kws={'s': 
 sns.regplot(x='total_bill', y='tip', data=tips, color='blue', scatter_kws={'s': 50, 'alpha': 0.5}, line_kws={'linestyle': '--'}, ax=ax2, fit_reg=False)
 
 
+
+
