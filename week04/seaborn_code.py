@@ -28,6 +28,7 @@ sns.swarmplot(x='day', y='tip', hue='sex', data=tips, palette='Set2', alpha=0.7,
 ax1.set_title('Strip Plot of Tip by Day and Gender')
 ax2.set_title('Swarm Plot of Tip by Day and Gender')
 plt.savefig('Seaborn_Figure01.jpg')
+plt.close()
 
 # **빈도 그래프**
 # figure에 2개의 서브 플롯을 생성
@@ -46,6 +47,7 @@ sns.countplot(x='time', hue='day', data=tips, palette='Set2', ax=ax2)
 ax1.set_title('Frequency of Tips by Time')
 ax2.set_title('Frequency of Tips by Time and Day')
 plt.savefig('Seaborn_Figure02.jpg')
+plt.close()
 
 # **선형 회귀선 있는 산점도**
 # figure에 2개의 서브 플롯을 생성
@@ -63,6 +65,7 @@ fig.suptitle('Scatter Plots with Regression Lines', fontsize=16)
 ax1.set_title('fit_reg = True')
 ax2.set_title('fit_reg = False')
 plt.savefig('Seaborn_Figure03.jpg')
+plt.close()
 
 # **히스토그램과 커널 밀도 추정 그래프**
 # 히스토그램과 커널 밀도 추정 그래프 함께 그리기
@@ -70,11 +73,13 @@ sns.histplot(tips['tip'], bins=30, kde=True, color='skyblue')
 
 plt.title('Histogram with KDE for Tips')
 plt.savefig('Seaborn_Figure04.jpg')
+plt.close()
 
 # **조인트 그래프**
 # jointplot( ) 그리기
 sns.jointplot(x='size', y='tip', data=tips, kind='scatter')
 plt.savefig('Seaborn_Figure05.jpg')
+plt.close()
 
 # **관계 그래프**
 # pairplot( ) 그리기
@@ -82,3 +87,4 @@ sns.pairplot(data=tips, hue='sex', diag_kind='hist', palette='husl')
 
 plt.suptitle('Pairplot with Histograms by Gender', y=1.05)
 plt.savefig('Seaborn_Figure06.jpg')
+plt.close()
