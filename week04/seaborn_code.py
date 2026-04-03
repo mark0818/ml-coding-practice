@@ -64,5 +64,15 @@ ax1.set_title('fit_reg = True')
 ax2.set_title('fit_reg = False')
 plt.savefig('Seaborn_Figure03.jpg')
 
+# **히스토그램과 커널 밀도 추정 그래프**
+# 히스토그램과 커널 밀도 추정 그래프 함께 그리기
+sns.histplot(tips['tip'], bins=30, kde=True, color='skyblue')
+
+plt.title('Histogram with KDE for Tips')
+plt.savefig('Seaborn_Figure04.jpg')
+
+# **조인트 그래프**
+# jointplot( ) 그리기
+
 
 
