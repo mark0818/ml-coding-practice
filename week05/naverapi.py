@@ -4,7 +4,7 @@ import datetime
 import json
 
 client_id = 'nvBig'
-client_secret = ''
+client_secret = '08otyPMV_jikZ_HjUshk'
 
 def main():
     node = 'news'                                             # 크롤링할 대상
