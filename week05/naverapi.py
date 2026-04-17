@@ -7,6 +7,7 @@ client_id = '08otyPMV_jikZ_HjUshk'
 client_secret = 'nRo5jC_WHa'
 
 def main():
+    
     node = 'news'                                             # 크롤링할 대상
     srcText = input('검색어를 입력하세요: ')
 
@@ -15,7 +16,7 @@ def main():
 
     jsonResponse = getNaverSearch(node, srcText, 1, 100)      # [CODE 2]
     total = jsonResponse['total']
-    
+
     while ((jsonResponse != None) and (jsonResponse['display'] != 0)):
         for post in jsonResponse['items']:
             cnt += 1
