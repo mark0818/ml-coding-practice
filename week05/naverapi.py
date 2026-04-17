@@ -31,4 +31,5 @@ def main():
 
         outfile.write(jsonFile)
 
-    print("가져온 데이터 : %d 건"%cnt)
+    print("가져온 데이터 : %d 건"%(cnt))
+    print('%s_naver_%s.json SAVED' % (srcText, node))
