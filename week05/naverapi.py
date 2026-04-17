@@ -3,8 +3,8 @@ import urllib.request
 import datetime
 import json
 
-client_id = 'nvBig'
-client_secret = '08otyPMV_jikZ_HjUshk'
+client_id = '08otyPMV_jikZ_HjUshk'
+client_secret = ''
 
 def main():
     node = 'news'                                             # 크롤링할 대상
