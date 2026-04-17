@@ -7,7 +7,7 @@ client_id = '08otyPMV_jikZ_HjUshk'
 client_secret = 'nRo5jC_WHa'
 
 def main():
-    
+
     node = 'news'                                             # 크롤링할 대상
     srcText = input('검색어를 입력하세요: ')
 
@@ -35,6 +35,7 @@ def main():
 
     print("가져온 데이터 : %d 건"%(cnt))
     print('%s_naver_%s.json SAVED' % (srcText, node))
+    
 
 def getNaverSearch(node, srcText, page_start, display):
         base = "https://openapi.naver.com/v1/search"
