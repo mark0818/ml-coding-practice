@@ -17,3 +17,5 @@ def main():
     nStartYear = int(input('데이터를 몇 년부터 수집할까요? : '))
     nEndYear = int(input('데이터를 몇 년까지 수집할까요? : '))
     ed_cd = "E"
+
+    jsonResult, result, nat_cd
