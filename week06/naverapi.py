@@ -35,6 +35,7 @@ def main():
     print("가져온 데이터 : %d 건" %(cnt))
     print('%s_naver_%s.json SAVED' % (srcText, node))
 
+
 def getNaverSearch(node, srcText, page_start, display):
     base = "https://openapi.naver.com/v1/search"
     node = "/%s.json" % node
@@ -47,6 +48,7 @@ def getNaverSearch(node, srcText, page_start, display):
         return None
     else:
         return json.loads(responseDecode)
+
 
 def getRequestUrl(url):
     req = urllib.request.Request(url)
@@ -62,6 +64,7 @@ def getRequestUrl(url):
         print(e)
         print("[%s] Error for URL : %s" % (datetime.datetime.now(), url))
         return None
+
     
 def getPostData(post, jsonResult, cnt):  #[CODE 3]
     title = post['title']
