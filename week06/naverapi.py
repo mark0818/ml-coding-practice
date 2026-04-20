@@ -35,6 +35,9 @@ def main():
     print("가져온 데이터 : %d 건" %(cnt))
     print('%s_naver_%s.json SAVED' % (srcText, node))
 
-def getNaverSearch 
+def getNaverSearch(node, srcText, page_start, display):
+    base = "https://openapi.naver.com/v1/search"
+    node = "/%s.json" % node
+    parameters = 
 
 
