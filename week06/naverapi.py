@@ -7,6 +7,7 @@ client_id = '08otyPMV_jikZ_HjUshk'
 client_secret = 'nRo5jC_WHa'
 
 def main():
+    
     node = 'news'
     srcText = input('검색어를 입력하세요: ')
 
