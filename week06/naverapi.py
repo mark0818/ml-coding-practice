@@ -8,13 +8,13 @@ client_secret = 'nRo5jC_WHa'
 
 def main():
 
-    node = 'news'
+    node = 'news'                                             # 크롤링할 대상
     srcText = input('검색어를 입력하세요: ')
 
     cnt = 0
     jsonResult = []
 
-    jsonResponse = getNaverSearch(node, srcText, 1, 100)    # [CODE 2]
+    jsonResponse = getNaverSearch(node, srcText, 1, 100)      # [CODE 2]
     total = jsonResponse['total']
 
     while ((jsonResponse != None) and (jsonResponse['display'] != 0)):
@@ -22,14 +22,14 @@ def main():
             cnt += 1
             getPostData(post, jsonResult, cnt)                # [CODE 3]
 
-            start = jsonResponse['start'] + jsonResponse['display']
-            jsonResponse = getNaverSearch(node, srcText, start, 100) # [CODE 2]
+        start = jsonResponse['start'] + jsonResponse['display']
+        jsonResponse = getNaverSearch(node, srcText, start, 100) # [CODE 2]
 
     print('전체 검색 : %d 건' %total)
 
     with open('%s_naver_%s.json' % (srcText, node), 'w', encoding = 'utf8') as outfile:
         jsonFile = json.dumps(jsonResult, indent = 4, sort_keys = True,
-                                ensure_ascii = False)
+                              ensure_ascii = False)
 
         outfile.write(jsonFile)
 
@@ -43,7 +43,7 @@ def getNaverSearch(node, srcText, page_start, display):
     parameters = "?query=%s&start=%s&display=%s" % (urllib.parse.quote(srcText), page_start, display)
 
     url = base + node + parameters
-    responseDecode = getRequestUrl(url)                #[CODE 1]
+    responseDecode = getRequestUrl(url)               #[CODE 1]
 
     if (responseDecode == None):
         return None
@@ -67,7 +67,7 @@ def getRequestUrl(url):
         print("[%s] Error for URL : %s" % (datetime.datetime.now(), url))
         return None
 
-    
+
 def getPostData(post, jsonResult, cnt):  #[CODE 3]
     title = post['title']
     description = post['description']
