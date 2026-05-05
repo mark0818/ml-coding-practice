@@ -146,3 +146,7 @@ netflix[netflix['title'].str.contains('Sankofa', na=False, case=False)]
 pd.set_option('display.max_rows', None)
 
 # 쉼표로 country 열의 값을 파이썬 리스트로 만들기
+netflix['country'] = netflix['country'].str.split(', ')
+netflix['country']
+
+# 파이썬 리스트로 바꾼 country 열의 값에 explode( ) 함수를 적용하여 개별 행으로 분리
