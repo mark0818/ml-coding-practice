@@ -43,4 +43,8 @@ netflix.dropna(axis = 0, inplace=True)
 # 8807 rows(원본 데이터 행 개수) - 17 rows(결측치 행) = 8790 rows(결측치가 제거된 행 개수)
 netflix.info()
 
+# 데이터프레임의 각 컬럼별 결측치 개수 반환
+# isna() == isnull() : 결측 값은 True 반환하고, 그 외에는 False 반환
+netflix.isna().sum()
+
 
