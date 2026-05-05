@@ -162,3 +162,9 @@ netflix_age_country_unstack
 
 # 특정 나이 그룹에 따른 특정 나라별 콘텐츠로 필터링
 # 연령, 국가 리스트
+age_order = ['All', 'Older Kids', 'Teens', 'Adults']
+country_order = ['United States', 'India', 'United Kingdom', 'Canada', 'Japan',
+                 'France', 'South Korea', 'Spain', 'Mexico', 'Turkey']
+
+# 데이터 필터링
+# .loc[] : 데이터프레임의 행과 열의 이름을 사용
