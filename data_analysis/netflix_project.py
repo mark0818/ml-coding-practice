@@ -187,4 +187,8 @@ sns.heatmap(netflix_age_country_unstack, cmap = cmap, linewidth=2.5, annot=True,
 
 plt.suptitle('Target ages proportion of total content by country',
              fontweight='bold', fontfamily='serif', fontsize=15)
-plt
+plt.title('Here we see interesting differences between countries. Most shows in South Korea are targeted to adults, for instance.',
+          fontsize=12, fontfamily='serif')
+plt.show()
+
+#
