@@ -217,3 +217,4 @@ wordcloud = WordCloud(background_color = 'white', width = 1400, height = 1400,
 
 plt.suptitle('Keywords in the description of Movies and TV shows',
              fontweight='bold', fontfamily='serif', fontsize=15)
+
