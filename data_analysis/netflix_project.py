@@ -93,4 +93,9 @@ sns.palplot(['#221f1f', '#b20710', '#e50914', '#f5f5f1'])
 plt.title('Netflix brand palatte', loc='left', fontfamily='serif', fontsize=15, y=1.2)
 plt.show()
 
+netflix['title'].str.contains('squid game', na=False, case=False)
+
+# 오징어 게임을 검색한 조건을 넷플릭스 데이터에 넣어서 True인 값만 출력
+netflix[netflix['title'].str.contains('Squid Game', na=False, case=False)]
+
 
