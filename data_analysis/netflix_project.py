@@ -100,3 +100,5 @@ netflix[netflix['title'].str.contains('Squid Game', na=False, case=False)]
 
 type_counts = netflix['type'].value_counts()
 print(type_counts)
+
+
