@@ -87,5 +87,5 @@ import seaborn as sns
 netflix = pd.read_csv('netflix_preprocessed.csv')
 
 # 넷플릭스 브랜드 상징 색깔 시각화
-
+sns.palplot(['#221f1f
 
