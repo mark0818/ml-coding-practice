@@ -218,3 +218,7 @@ wordcloud = WordCloud(background_color = 'white', width = 1400, height = 1400,
 plt.suptitle('Keywords in the description of Movies and TV shows',
              fontweight='bold', fontfamily='serif', fontsize=15)
 
+# 워드 클라우드 표시
+# plt.imshow( ) : array에 색을 채워서 이미지로 표시
+plt.imshow(wordcloud)
+
