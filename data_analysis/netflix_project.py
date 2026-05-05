@@ -183,3 +183,8 @@ plt.figure(figsize=(15, 5))
 # 사용자 정의 컬러맵 만들기
 cmap = plt.matplotlib.colors.LinearSegmentedColormap.from_list('', ['#221f1f','#b20710','#f5f5f1'])
 
+sns.heatmap(netflix_age_country_unstack, cmap = cmap, linewidth=2.5, annot=True, fmt='.0%')
+
+plt.suptitle('Target ages proportion of total content by country',
+             fontweight='bold', fontfamily='serif', fontsize=15)
+plt
