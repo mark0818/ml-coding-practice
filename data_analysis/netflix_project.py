@@ -78,4 +78,9 @@ netflix.head(2)
 # index=False: 데이터프레임의 인덱스 열을 포함하지 않겠다는 뜻
 netflix.to_csv()('netflix_preprocessed.csv', index=False)
 
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
 
