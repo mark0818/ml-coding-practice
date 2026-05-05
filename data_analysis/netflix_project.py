@@ -19,4 +19,3 @@ netflix.head(3)
 # .info() : 열에 대한 요약 정보 확인
 netflix.info()
 
-#
