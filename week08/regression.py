@@ -39,5 +39,15 @@ from sklearn.linear_model import SGDRegressor
 
 sdg_reg = SGDRegressor(max_iter=1000, tol=1e-5, penalty=None, eta0=0.01,
                        n_iter_no_change=100, random_state=42)
-                       )
+sdg_reg.fit(X, y.ravel())  # fit()이 1D 타깃을 기대하기 때문에 y.ravel()로 씁니다
+
+sdg_reg.intercept_, sdg_reg.coef_
+
+# 다항 회귀
+
+np.random.seed(42)
+m = 100
+X = 6 * np.random.rand(m, 1) - 3
+
+
 
