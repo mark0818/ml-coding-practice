@@ -142,5 +142,10 @@ list(iris)
 print(iris.data.head(3))
 print(iris.target.head(3))  # 샘플이 섞여 있지 않습니다.
 
+print(iris.target_names)
+
+from sklearn.linear_model import LogisticRegression
+
+
 
 
