@@ -19,3 +19,5 @@ X_new = [[5.5, 1.7], [5.0, 1.5]]
 
 print(svm_clf.predict(X_new))
 print(svm_clf.decision_function(X_new))
+
+
