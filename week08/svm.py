@@ -25,3 +25,4 @@ print(svm_clf.decision_function(X_new))
 from sklearn.datasets import make_moons
 from sklearn.preprocessing import PolynomialFeatures
 
+X, y
