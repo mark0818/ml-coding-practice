@@ -127,5 +127,10 @@ print(Lasso_reg.predict([[1.5]]))
 
 # 엘라스틱넷
 
+from sklearn.linear_model import ElasticNet
+
+Elastic_net = ElasticNet(alpha=0.1, l1_ratio=0.5)
+Elastic_net.fit(X, y)
+print()
 
 
