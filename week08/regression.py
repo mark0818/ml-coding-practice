@@ -131,6 +131,9 @@ from sklearn.linear_model import ElasticNet
 
 Elastic_net = ElasticNet(alpha=0.1, l1_ratio=0.5)
 Elastic_net.fit(X, y)
-print()
+print(Elastic_net.predict([[1.5]]))
+
+# 로지스틱 회귀
+
 
 
