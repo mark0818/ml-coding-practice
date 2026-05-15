@@ -60,6 +60,11 @@ plt.show()
 
 from sklearn.preprocessing import PolynomialFeatures
 
+poly_features = PolynomialFeatures(degree=2, include_bias=False)
+X_ploy = poly_features.fit_transform(X)
+print(X[0])
+print(X_ploy[0])
 
+lin
 
 
