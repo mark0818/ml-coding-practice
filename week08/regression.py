@@ -123,7 +123,9 @@ from sklearn.linear_model import Lasso
 
 Lasso_reg = Lasso(alpha=0.1)
 Lasso_reg.fit(X, y)
+print(Lasso_reg.predict([[1.5]]))
 
+# 엘라스틱넷
 
 
 
