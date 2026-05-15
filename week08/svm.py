@@ -31,4 +31,5 @@ ploynomial_svm_clf = make_pipeline(
     PolynomialFeatures(degree=3),
     StandardScaler(),
     LinearSVC(C=10, max_iter=10_000, dual=True, random_state=42)
-    
+)
+ploynomial.fit(X, y)
