@@ -36,5 +36,8 @@ plt.gca().set_axisbelow(True)
 plt.grid()
 plt.show()
 
+# 각 샘플은 5개의 클러스터 중 하나에 할당
+print(y_pred)
+
 
 
