@@ -53,7 +53,11 @@ kmeans_per_k = [KMeans(n_clusters=k, n_init=10, random_state=42).fit(X) for k in
 inertias = [model.inertia_ for model in kmeans_per_k]
 
 plt.figure(figsize=(8, 3.5))
-plt.plot(range)
+plt.plot(range(1, 10), inertias, "bo-")
+plt.xlabel("$k$")
+plt.ylabel("이너셔")
+plt.annotate("", xy=(5, inertias[4]), xytext=(4.45, 650), arrowprops=dict(facecolor='black', shrink=0.1))
+
 
 
 
