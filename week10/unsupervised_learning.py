@@ -91,4 +91,8 @@ for k in (3, 4, 5, 6):
     pos = padding
     ticks = []
     for i in range(k):
-        
+        coeffs = silhouette_coefficients[y_pred == i]
+        coeffs.sort()
+
+        color = plt.cm.Spectral(i / k)
+        plt.
