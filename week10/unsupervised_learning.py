@@ -30,5 +30,11 @@ def plot_clusters(X, y=None):
     plt.xlabel("$x_1$")
     plt.ylabel("$x_2$", rotation=0)
 
-plt.figure
+plt.figure(figsize=(8, 4))
+plot_clusters(X)
+plt.gca().set_axisbelow(True)
+plt.grid()
+plt.show()
+
+
 
