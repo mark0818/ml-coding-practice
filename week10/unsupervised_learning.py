@@ -168,3 +168,6 @@ plot_dbscan(dbscan2, X, size=600, show_ylabels=False)
 
 plt.show()
 
+from sklearn.neighbors import KNeighborsClassifier
+
+
